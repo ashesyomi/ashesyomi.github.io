@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400&display=swap');
+        *{
+            font-family: 'IBM Plex Sans KR', sans-serif;
+            font-size:20px;
+        }
+        #home{
+            position:relative;
+            display:inline-block;
+            margin:20px 100px 0px 30px;
+            width:280px;
+            height:70px;
+        }
+        nav{
+            position:absolute;
+            left:400px;
+            top:10px;
+            display:inline-block;
+            margin-bottom:20px;
+            padding-top:30px;
+        }
+        #home_back{
+            width:100%;
+        }
+    	.dropdownmenu ul, .dropdownmenu li {
+			margin: 0;
+			padding: 0;
+		}
+		.dropdownmenu ul {
+			list-style: none;
+			width: 160%;
+            float:center;
+		}
+		.dropdownmenu li {
+			float: left;
+			position: relative;
+			width:auto;
+		}
+		.dropdownmenu a {
+			color:black;
+			display: block;
+			padding: 10px 25px;
+			text-align: center;
+			text-decoration: none;
+			-webkit-transition: all .25s ease;
+			-moz-transition: all .25s ease;
+			-ms-transition: all .25s ease;
+			-o-transition: all .25s ease;
+			transition: all .25s ease;
+		}
+		.dropdownmenu ul :hover a {
+			color: rgb(105, 143, 240);
+        }
+		#submenu {
+			left: 0;
+			opacity: 0;
+			position: absolute;
+			top: 35px;
+			visibility: hidden;
+			z-index: 1;
+		}
+		li:hover ul#submenu {
+			opacity: 1;
+			top: 50px;
+			visibility: visible;
+		}
+		#submenu li {
+			float: none;
+			width: 100% auto; 
+		}
+		#submenu a:hover {
+			background: rgb(105, 143, 240);
+			color:white;
+		}
+		#submenu a{
+			background-color:white;
+			color:black;
+            font-size:18px;
+		}
+		#drop{
+			float:center;
+			margin-right:100px;
+            /*border-bottom:2px solid rgb(105, 143, 240);*/
+		}.main_image {
+            position: relative;
+        }
+        .main_image_text {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate( -50%, -50% );
+            color: white;
+            text-shadow:1px 2px 2px grey;
+        }
+        .submenu li{
+            font-size:15px;
+        }
+        h1{
+            font-size:50px;
+        }
+        /**/
+    </style>
+</head>
+<body>
+	<header>
+        X-Frame-Options: DENY
+        <div>
+            <a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/web_main.html">
+            <image src="main_icon5.png" id="home"></image>
+            </a>
+        </div>
+        <nav class="dropdownmenu">
+            <ul>
+                <li class="drop" id="drop"><a href="#">불면증이란?</a>
+                    <ul id="submenu">
+                        <li><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website1_1.html">불면증</a></li>
+                        <li><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website1_2.html">자가진단</a></li>
+                    </ul>
+                </li>
+                <li class="drop" id="drop"><a href="#">수면정보</a>
+                    <ul id="submenu">
+                        <li><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website2_1.html">수면의 중요성</a></li>
+                        <li><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website2_2.html">수면에 좋은 음식</a></li>
+                        <li><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website2_3.html">수면위생법</a></li>
+                        <li><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website2_4.html">수면을 위한 십계명</a></li>
+                    </ul>
+                </li>
+                <li class="drop" id="drop"><a href="#">수면자료</a>
+                    <ul id="submenu">
+                        <li><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website3_1.html">ASMR</a></li>
+                        <li><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website3_2.html">수면음악</a></li>
+                        <li><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website3_4.html">스트레칭과 호흡법</a></li>
+                    </ul>
+                </li>
+                <li class="drop" id="drop"><a href="file:///C:/Users/%EC%9E%AC%EC%9A%94%EB%AF%B8/Desktop/%EC%9A%94%EB%AF%B8%20%EA%B3%BC%EC%A0%9C%20(3-2)/UIUX%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EB%B6%88%EB%A9%B4%EC%A6%9D_web/website4.html">제품구매</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main_image">
+        <img src="night.jpg" width="100%">
+        <h1 class="main_image_text" style="font-size:50px">A sound sleep : 숙면</h1>
+    </div>
+</body>
+</html>
